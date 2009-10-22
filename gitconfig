@@ -26,7 +26,7 @@
 	ci = commit
 	co = checkout
   logl = log --pretty=oneline --abbrev-commit --decorate
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %f %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 [github]
 	user = will
 [branch]
