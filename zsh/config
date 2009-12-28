@@ -4,6 +4,10 @@ else
   export PS1='%3~$(git_info_for_prompt)%# '
 fi
 
+if [[ -a ~/.zsh/local_machine_config ]]; then
+  . ~/.zsh/local_machine_config
+fi
+
 export EDITOR='vim'
 export PATH="~/bin:/usr/local/bin:/opt/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH:/Users/will/code/jruby/bin"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
