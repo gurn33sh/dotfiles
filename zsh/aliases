@@ -1,5 +1,7 @@
 # cd
 alias ..='cd ..'
+alias grep="grep -i"
+alias psg="ps auxwwww | grep -v grep | grep"
 
 # ls
 alias ls="ls -FG"
