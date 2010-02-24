@@ -5,6 +5,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set showcmd
+set autochdir
 
 set showmatch
 set ignorecase
