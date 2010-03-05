@@ -5,11 +5,13 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set showcmd
-set autochdir
+
+colorscheme ir_black
 
 set showmatch
 set ignorecase
 set incsearch
+set autoread
 
 set ruler
 set virtualedit=all
@@ -22,6 +24,8 @@ set cursorline
 
 map <leader>t :FuzzyFinderTextMate
 let g:fuzzy_ignore = "*/log/*;*.swf;*.cache;*.ttf;*.jpg;*.png;*/doc/*;*/etc/*;*/vendor/*;*tmp/*;*/.svn/*;*/public/images/*;*/ufiles/*;*/.git/*;*/script/*"
+
+imap jj <Esc>
 
 set foldmethod=indent
 set foldnestmax=10
