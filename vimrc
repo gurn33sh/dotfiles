@@ -36,7 +36,7 @@ highlight SpecialKey guifg=#4a4a5
 set backspace=indent,eol,start
 
 
-map <leader>t :FuzzyFinderTextMate
+map <leader>t :FuzzyFinderTextMate<CR>
 let g:fuzzy_ignore = "*/log/*;*.swf;*.cache;*.ttf;*.jpg;*.png;*/doc/*;*/etc/*;*/vendor/*;*tmp/*;*/.svn/*;*/public/images/*;*/ufiles/*;*/.git/*;*/script/*"
 
 imap jj <Esc>
