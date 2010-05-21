@@ -41,6 +41,7 @@ let g:fuzzy_ignore = "*/log/*;*.swf;*.cache;*.ttf;*.jpg;*.png;*/doc/*;*/etc/*;*/
 
 imap jj <Esc>
 
+vmap D y'>p
 " folding
 set foldmethod=indent
 set foldnestmax=10
