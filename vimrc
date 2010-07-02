@@ -1,6 +1,9 @@
 set nocompatible
 set showcmd
 
+call pathogen#runtime_append_all_bundles() 
+
+
 " indent
 set autoindent
 set smartindent
@@ -51,4 +54,4 @@ set foldlevel=1
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
 
-source ~/.vim/snippets/support_functions.vim
+"source ~/.vim/snippets/support_functions.vim
