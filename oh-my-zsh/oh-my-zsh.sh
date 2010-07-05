@@ -16,11 +16,11 @@ plugin=${plugin:=()}
 for plugin ($plugins) source $ZSH/plugins/$plugin.plugin.zsh
 
 # Check for updates on initial load...
-if [ "$DISABLE_AUTO_UPDATE" = "true" ]
-then
-  return
-else
-  /usr/bin/env zsh $ZSH/tools/check_for_upgrade.sh
-fi
+#if [ "$DISABLE_AUTO_UPDATE" = "true" ]
+#then
+#  return
+#else
+#  /usr/bin/env zsh $ZSH/tools/check_for_upgrade.sh
+#fi
 
 unset config_file
