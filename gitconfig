@@ -34,3 +34,6 @@
 	autosetupmerge = true
 [apply]
 	whitespace = nowarn
+[merge "gemfilelock"]
+  name = relocks the gemfile.lock
+  driver = bundle lock
