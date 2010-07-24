@@ -3,6 +3,7 @@ set showcmd
 
 call pathogen#runtime_append_all_bundles() 
 
+set ttyfast
 
 " indent
 set autoindent
