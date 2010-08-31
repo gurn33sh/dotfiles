@@ -1,7 +1,7 @@
 set nocompatible
 set showcmd
 
-call pathogen#runtime_append_all_bundles() 
+call pathogen#runtime_append_all_bundles()
 
 set ttyfast
 
@@ -54,5 +54,7 @@ set foldlevel=1
 
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
+autocmd BufWritePre * :%s/\s\+$//e
 
-"source ~/.vim/snippets/support_functions.vim
+" Save on focus lost
+:au FocusLost * :wa
