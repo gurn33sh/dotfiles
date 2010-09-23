@@ -41,6 +41,7 @@ set backspace=indent,eol,start
 
 
 map <leader>t :FuzzyFinderTextMate<CR>
+map <leader>l :ruby finder.rescan!<CR>
 let g:fuzzy_ignore = "*/log/*;*.swf;*.cache;*.ttf;*.jpg;*.png;*/doc/*;*/etc/*;*/vendor/*;*tmp/*;*/.svn/*;*/public/images/*;*/ufiles/*;*/.git/*;*/script/*"
 
 imap jj <Esc>
