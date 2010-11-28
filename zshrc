@@ -24,6 +24,8 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=~/bin:/usr/local/bin:/opt/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/will/code/jruby/bin:/Users/will/.bin:/Users/will/.ec2/bin
 
+export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+
 if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
