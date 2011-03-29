@@ -48,7 +48,7 @@ imap jj <Esc>
 
 vmap D y'>p
 " folding
-set foldmethod=indent
+set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
