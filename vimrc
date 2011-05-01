@@ -14,7 +14,12 @@ set softtabstop=2
 set shiftwidth=2
 
 " colors
-colorscheme ir_black
+"if has('gui_running')
+  set background=dark
+"else
+  "set background=light
+"endif
+colorscheme solarized
 syntax on
 
 " search
