@@ -11,4 +11,4 @@ alias gd="git diff"
 alias git="nocorrect git"
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
-alias done='growlnotify -s -m done && say done'
+alias ddone='growlnotify -s -m done && say done'
