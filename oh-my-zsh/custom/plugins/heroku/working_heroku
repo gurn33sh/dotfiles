@@ -1,0 +1,41 @@
+#compdef heroku
+_heroku() {
+
+local -a app_argument
+app_argument=('(-a --app)'{-a,--app}'[application name]:')
+
+_heroku_commands() {
+  local -a commands
+  commands=(
+    'addons:manage addon resources'
+    'logs:display logs for an app'
+  )
+  _describe -t commands 'heroku command' commands
+}
+
+_heroku-logs() {
+  _arguments \
+    '(-n --num)'{-n,--num}'[the number of lines to display]:' \
+    '(-p --ps)'{-p,--ps}'[only display logs from the given process]:' \
+    '(-s --source)'{-s,--source}'[only display logs from the given source]:' \
+    '(-t --tail)'{-t,--tail}'[continually stream logs]' \
+    $app_argument && ret=0
+}
+
+local curcontext=$curcontext ret=1
+local context state line
+declare -A opt_args
+_arguments -C \
+  '*::arg:->cmd' && return
+case $state in
+  (cmd)
+    if (( $CURRENT == 1 )); then
+      _heroku_commands
+    else
+      curcontext="${curcontext%:*:*}:heroku-$words[1]:"
+      _call_function ret _heroku-$words[1]
+    fi
+    ;;
+esac
+}
+_heroku
