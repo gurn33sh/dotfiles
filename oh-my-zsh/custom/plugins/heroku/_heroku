@@ -1,20 +1,16 @@
 #compdef heroku
-# generated from Heroku v2.1.4
-# with these plugins: heroku-cedar2, pgcmd
+# generated from Heroku v2.4.0
+# with these plugins: heroku-v3, old_plugins
 
 _heroku() {
 
 local -a app_argument
-app_argument=('(-a --app)'{-a,--app}'[application name]:app:_apps')
-
-(( $+functions[_aps] )) || 
-_apps() {
-  heroku apps
-}
+app_argument=('(-a --app)'{-a,--app}'[application name]:')
 
 _heroku_commands() {
   local -a commands
   commands=(
+      "account\:confirm_billing:Confirm that your account can be billed at the end of the month"
       "addons:list installed addons"
       "addons\:list:list all available addons"
       "addons\:add:install an addon"
@@ -39,7 +35,7 @@ _heroku_commands() {
       "domains\:add:add a custom domain to an app"
       "domains\:remove:remove a custom domain from an app"
       "domains\:clear:remove all custom domains from an app"
-      "help:"
+      "help:list available commands or display help for a specific command"
       "keys:display keys for the current user"
       "keys\:add:add a key for the current user"
       "keys\:remove:remove a key from the current user"
@@ -47,19 +43,19 @@ _heroku_commands() {
       "logs:display recent log output"
       "logs\:cron:DEPRECATED: display cron logs from legacy logging"
       "logs\:drains:manage syslog drains"
-      "maintenance\:on:put the app into maintenance mode"
-      "maintenance\:off:take the app out of maintenance mode"
+      "maintenance\:on:enable maintenance mode"
+      "maintenance\:off:disable maintenance mode"
       "pg\:info:display database information"
-      "pg\:promote:sets DATABASE as your DATABASE_URL"
-      "pg\:reset:delete all data in DATABASE"
-      "pg\:wait:monitor database creation, exit when complete"
-      "pg\:psql:open a psql shell to the database"
       "pg\:ingress:allow direct connections to the database from this IP for one minute"
-      "pg\:backups:list legacy postgres backups"
+      "pg\:promote:sets DATABASE as your DATABASE_URL"
+      "pg\:psql:open a psql shell to the database"
+      "pg\:reset:delete all data in DATABASE"
+      "pg\:unfollow:stop a replica from following and make it a read/write database"
+      "pg\:wait:monitor database creation, exit when complete"
       "pgbackups:list captured backups"
       "pgbackups\:url:get a temporary URL for a backup"
       "pgbackups\:capture:capture a backup from a database id"
-      "pgbackups\:restore:restore a backup to a database id"
+      "pgbackups\:restore:restore a backup to a database"
       "pgbackups\:destroy:destroys a backup"
       "plugins:list installed plugins"
       "plugins\:install:install a plugin"
@@ -86,10 +82,27 @@ _heroku_commands() {
       "stack:show the list of available stacks"
       "stack\:migrate:prepare migration of this app to a new stack"
       "version:show heroku client version"
-      "addons\:configure_addon:"
-      "pg\:untrack:diverge DATABASE from its leader"
+      "apps\:transfer:move an app to another team"
+      "config\:lock:lock one or more config vars"
+      "config\:unlock:unlock one or more config vars"
+      "maintenance:show maintenance mode status"
+      "members:list members of a team"
+      "members\:add:add members to a team"
+      "members\:edit:change membership properties"
+      "members\:remove:remove members from a team"
+      "teams:list teams"
+      "teams\:info:display information about a team"
+      "teams\:edit:update a team"
+      "production:show production mode status"
+      "production\:on:enable production mode"
+      "production\:off:disable production mode"
     )
   _describe -t commands 'heroku command' commands
+}
+
+_heroku-account:confirm_billing() {
+  _arguments \
+      $app_argument && ret=0
 }
 
 _heroku-addons() {
@@ -104,7 +117,7 @@ _heroku-addons:list() {
 
 _heroku-addons:add() {
   _arguments \
-      ':cmdarg[hellp]:( )' \
+      ':cmdarg:( )' \
     $app_argument && ret=0
 }
 
@@ -139,12 +152,13 @@ _heroku-apps() {
 
 _heroku-apps:info() {
   _arguments \
-    '(-r --raw)'{-r,--raw}"[output info as raw key/value pairs]" \
       $app_argument && ret=0
 }
 
 _heroku-apps:create() {
   _arguments \
+    '(-a --addons)'{-a,--addons}"[a list of addons to install]:" \
+    '(-t --team)'{-t,--team}"[the team]:" \
     '(-r --remote)'{-r,--remote}"[the git remote to create, default \"heroku\"]:" \
     '(-s --stack)'{-s,--stack}"[the stack on which to create the app]:" \
       ':cmdarg:( )' \
@@ -185,6 +199,7 @@ _heroku-config() {
 
 _heroku-config:add() {
   _arguments \
+    '(-l --lock)'{-l,--lock}"[lock the config vars after adding them]" \
       ':cmdarg:( )' \
     $app_argument && ret=0
 }
@@ -243,7 +258,8 @@ _heroku-domains:clear() {
 
 _heroku-help() {
   _arguments \
-      $app_argument && ret=0
+      ':cmdarg:( )' \
+    $app_argument && ret=0
 }
 
 _heroku-keys() {
@@ -304,19 +320,13 @@ _heroku-pg:info() {
     $app_argument && ret=0
 }
 
+_heroku-pg:ingress() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
 _heroku-pg:promote() {
-  _arguments \
-      ':cmdarg:( )' \
-    $app_argument && ret=0
-}
-
-_heroku-pg:reset() {
-  _arguments \
-      ':cmdarg:( )' \
-    $app_argument && ret=0
-}
-
-_heroku-pg:wait() {
   _arguments \
       ':cmdarg:( )' \
     $app_argument && ret=0
@@ -328,16 +338,22 @@ _heroku-pg:psql() {
     $app_argument && ret=0
 }
 
-_heroku-pg:ingress() {
+_heroku-pg:reset() {
   _arguments \
       ':cmdarg:( )' \
     $app_argument && ret=0
 }
 
-_heroku-pg:backups() {
+_heroku-pg:unfollow() {
   _arguments \
-    '(-d --db)'{-d,--db}"[the config var that contains the database URL you'd like to use]:" \
-      $app_argument && ret=0
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pg:wait() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
 }
 
 _heroku-pgbackups() {
@@ -360,7 +376,6 @@ _heroku-pgbackups:capture() {
 
 _heroku-pgbackups:restore() {
   _arguments \
-    '(-d --db)'{-d,--db}"[the database id to target for the restore]:" \
       ':cmdarg:( )' \
     $app_argument && ret=0
 }
@@ -514,15 +529,90 @@ _heroku-version() {
       $app_argument && ret=0
 }
 
-_heroku-addons:configure_addon() {
+_heroku-apps:transfer() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-config:lock() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-config:unlock() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-maintenance() {
   _arguments \
       $app_argument && ret=0
 }
 
-_heroku-pg:untrack() {
+_heroku-members() {
+  _arguments \
+    '(-t --team)'{-t,--team}"[the team to which to add the member]:" \
+      $app_argument && ret=0
+}
+
+_heroku-members:add() {
+  _arguments \
+    '(-r --role)'{-r,--role}"[the role to assign to the new members]:" \
+    '(-t --team)'{-t,--team}"[the team to which to add the member]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-members:edit() {
+  _arguments \
+    '(-r --role)'{-r,--role}"[the role to assign to each user]:" \
+    '(-t --team)'{-t,--team}"[the team to which to add the member]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-members:remove() {
+  _arguments \
+    '(-t --team)'{-t,--team}"[the team to which to add the member]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-teams() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-teams:info() {
   _arguments \
       ':cmdarg:( )' \
     $app_argument && ret=0
+}
+
+_heroku-teams:edit() {
+  _arguments \
+    '(-p --plan)'{-p,--plan}"[change the plan]:" \
+    '(-n --name)'{-n,--name}"[rename the team]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-production() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-production:on() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-production:off() {
+  _arguments \
+      $app_argument && ret=0
 }
 
 local curcontext=$curcontext ret=1
