@@ -1,8 +1,11 @@
 #!/usr/bin/ruby
-require 'irb/completion'
-require 'irb/ext/save-history'
-require 'rubygems'
-require 'interactive_editor'
+begin
+  require 'irb/completion'
+  require 'irb/ext/save-history'
+  require 'rubygems'
+  require 'interactive_editor'
+rescue LoadError
+end
 
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
