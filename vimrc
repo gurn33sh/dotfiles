@@ -14,13 +14,13 @@ set softtabstop=2
 set shiftwidth=2
 
 " colors
-"if has('gui_running')
+if has('gui_running')
+  set background=light
+else
   set background=dark
-"else
-  "set background=light
-"endif
-colorscheme solarized
+endif
 syntax on
+colorscheme solarized
 
 " search
 set showmatch
@@ -64,3 +64,4 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Save on focus lost
 :au FocusLost * :wa
+
