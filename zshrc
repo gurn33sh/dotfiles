@@ -28,6 +28,7 @@ export PATH=~/bin:/usr/local/bin:/opt/local/bin:/usr/local/sbin:/usr/local/mysql
 
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
 export PGDATA=/usr/local/var/postgres
+export PSQL_EDITOR="vim -c ':set ft=sql'"
 
 if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
 eval "$(rbenv init -)"
