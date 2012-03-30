@@ -1,6 +1,7 @@
 --ignore-dir=vendor
 --ignore-dir=coverage
 --pager=less -FRSX
+--type-set=markdown=.md
 --type-set=haml=.haml
 --type-set=sass=.sass
 --type-set=mustache=.mustache

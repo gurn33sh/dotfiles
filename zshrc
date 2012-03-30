@@ -30,5 +30,4 @@ export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-cont
 export PGDATA=/usr/local/var/postgres
 
 if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
-if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
-
+eval "$(rbenv init -)"
