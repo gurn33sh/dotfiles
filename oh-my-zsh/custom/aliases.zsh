@@ -14,3 +14,13 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias ddone='growlnotify -s -m done && say done'
 
 alias h='heroku'
+alias hl='heroku logs -t'
+alias hc='heroku config'
+alias hp='heroku pg:info'
+alias hq='heroku pg:psql'
+
+alias hs='heroku sudo'
+alias hsc='heroku sudo config'
+alias hsp='heroku sudo pg:info'
+alias hsq='heroku pg:psql'
+alias hsl='heroku sudo logs -t'
