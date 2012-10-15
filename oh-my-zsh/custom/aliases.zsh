@@ -1,3 +1,4 @@
+alias irb='pry'
 alias grep="grep -i"
 alias psg="ps auxwwww | grep -v grep | grep"
 
@@ -10,6 +11,7 @@ alias gw="git add -u && git commit -m"
 alias gd="git diff"
 alias git="nocorrect git"
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gdt='git difftool -y -t Kaleidoscope'
 
 alias ddone='growlnotify -s -m done && say done'
 

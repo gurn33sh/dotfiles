@@ -4,6 +4,15 @@ set ttyfast
 
 call pathogen#runtime_append_all_bundles()
 
+" map tab to autocomplete
+imap <Tab> <C-P>
+set complete=.,w,b,t
+" omnicomplete with C-space
+imap <c-space> <c-x><c-o>
+" line complete with C-M-space
+imap <c-S-space> <c-x><c-l>
+
+
 " indent
 set autoindent
 set smartindent
@@ -26,7 +35,9 @@ set showmatch
 set ignorecase
 set incsearch
 
+" misc
 set autoread
+set mouse=a
 
 " screen
 set ruler
@@ -35,10 +46,6 @@ set cursorline
 set number
 
 set backspace=indent,eol,start
-
-map <leader>t :FuzzyFinderTextMate<CR>
-map <leader>r :ruby finder.rescan!<CR>
-let g:fuzzy_ignore = "*/log/*;*.swf;*.cache;*.ttf;*.jpg;*.png;*/doc/*;*/etc/*;*/vendor/*;*tmp/*;*/.svn/*;*/public/images/*;*/ufiles/*;*/.git/*;*/script/*"
 
 imap jj <Esc>
 imap jk <Esc>
@@ -62,5 +69,4 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 silent execute '!mkdir -p ~/.vim_backups'
 set backupdir=~/.vim_backups//
 set directory=~/.vim_backups//
-
 

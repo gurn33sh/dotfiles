@@ -40,3 +40,11 @@
   driver = bundle lock
 [push]
 	default = tracking
+[advice]
+	statusHints = false
+[diff]
+	mnemonicprefix = true
+[rerere]
+	enabled = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
