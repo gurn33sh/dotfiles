@@ -4,4 +4,5 @@
 --type-set=markdown=.md
 --type-set=haml=.haml
 --type-set=sass=.sass
+--type-set=coffee=.coffee
 --type-set=mustache=.mustache
