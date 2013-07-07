@@ -15,7 +15,7 @@ alias gdt='git difftool -y -t Kaleidoscope'
 
 alias ddone='growlnotify -s -m done && say done'
 
-alias h='heroku'
+alias h='/Users/will/code/heroku/heroku/bin/heroku'
 alias hl='heroku logs -t'
 alias hc='heroku config'
 alias hp='heroku pg:info'
