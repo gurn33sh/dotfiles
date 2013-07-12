@@ -9,6 +9,6 @@
 -- always show how long a query takes
 \timing
 
--- a prompt wth transaction information
+-- a prompt wtih transaction information
 \set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
 
