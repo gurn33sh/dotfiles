@@ -1,7 +1,7 @@
 "set go-=T
 "set bg=dark
 "if &background == "dark"
-	"hi normal guibg=black
+"	hi normal guibg=black
 "endif
 
 set guioptions-=T

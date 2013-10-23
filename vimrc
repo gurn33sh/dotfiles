@@ -22,6 +22,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " colors
+let g:solarized_termcolors=256
 if has('gui_running')
   set background=light
 else
