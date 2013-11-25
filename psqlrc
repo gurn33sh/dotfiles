@@ -18,5 +18,8 @@
 --nice timestamps
 set timezone to 'America/Los_Angeles';
 
+--nulls are ghosts
+\pset null (null)
+
 \unset QUIET
 
