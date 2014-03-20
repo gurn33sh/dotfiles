@@ -26,6 +26,7 @@ let g:solarized_termcolors=256
 if has('gui_running')
   set background=light
 else
+  set t_Co=256
   set background=dark
 endif
 syntax on
@@ -63,6 +64,7 @@ set foldlevel=1
 " kill whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
+set wildmenu
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " Use a common directory for backups and swp files
@@ -71,3 +73,5 @@ silent execute '!mkdir -p ~/.vim_backups'
 set backupdir=~/.vim_backups//
 set directory=~/.vim_backups//
 
+" all sql is psql
+let g:sql_type_default = 'pgsql'

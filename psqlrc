@@ -9,9 +9,6 @@
 -- depending on how wide the output is
 \x auto
 
--- always show how long a query takes
-\timing
-
 -- a prompt wtih transaction information
 \set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
 
@@ -20,6 +17,9 @@ set timezone to 'America/Los_Angeles';
 
 --nulls are ghosts
 \pset null (null)
+
+-- always show how long a query takes
+\timing
 
 \unset QUIET
 

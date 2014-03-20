@@ -48,3 +48,5 @@
 	enabled = true
 [difftool "Kaleidoscope"]
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[vain]
+	default = cafe

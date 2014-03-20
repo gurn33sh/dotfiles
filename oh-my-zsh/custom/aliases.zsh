@@ -26,3 +26,5 @@ alias hsc='heroku sudo config'
 alias hsp='heroku sudo pg:info'
 alias hsq='heroku sudo pg:psql'
 alias hsl='heroku sudo logs -t'
+
+alias bundle='nocorrect bundle'
