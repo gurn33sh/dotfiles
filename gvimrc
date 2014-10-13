@@ -9,6 +9,7 @@ set guifont=Inconsolata:h16
 
 " show invisibles
 set list
+autocmd Filetype go set nolist
 set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a5

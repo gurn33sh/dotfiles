@@ -32,7 +32,8 @@ export PATH=~/.bin:$GOPATH/bin:/usr/local/bin:/opt/local/bin:/usr/local/sbin:/us
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
 export PGDATA=/usr/local/var/postgres
 export PSQL_EDITOR="vim -c ':set ft=sql'"
+export HEROKU_USE_SPECIAL_SUDO_TOKEN=1
 
 
 if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
-eval "$(rbenv init -)"
+eval "$(rbenv init - --no-rehash)"

@@ -1,8 +1,33 @@
 set nocompatible
+
+"start vundle stuff
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'fatih/vim-go'
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'rking/ag.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'exu/pgsql.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'Lokaltog/vim-easymotion'
+call vundle#end()
+
+filetype plugin indent on
+"end vundle stuff
+
 set showcmd
 set ttyfast
-
-call pathogen#runtime_append_all_bundles()
 
 " map tab to autocomplete
 imap <Tab> <C-P>
@@ -75,3 +100,16 @@ set directory=~/.vim_backups//
 
 " all sql is psql
 let g:sql_type_default = 'pgsql'
+
+" golang
+let g:go_fmt_command = "gofmt"
+
+
+" easymotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+nmap s <Plug>(easymotion-s)
+omap t <Plug>(easymotion-bd-tl)
+let g:EasyMotion_use_upper = 1 " Use uppercase target labels and type as a lower case
+let g:EasyMotion_smartcase = 1 " type `l` and match `l`&`L`
+let g:EasyMotion_use_smartsign_us = 1 " Smartsign (type `3` and match `3`&`#`)
+

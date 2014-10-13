@@ -5,12 +5,15 @@
 -- if you typo a sql command, but only in interactive mode
 \set ON_ERROR_ROLLBACK interactive
 
+-- don't forget to be in a transaction
+\set AUTOCOMMIT off
+
 -- automatically switch between extended and normal
 -- depending on how wide the output is
 \x auto
 
 -- a prompt wtih transaction information
-\set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+\set PROMPT1 '%[%033[33;1m%]%x%x%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
 
 --nice timestamps
 set timezone to 'America/Los_Angeles';
