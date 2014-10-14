@@ -5,9 +5,6 @@
 -- if you typo a sql command, but only in interactive mode
 \set ON_ERROR_ROLLBACK interactive
 
--- don't forget to be in a transaction
-\set AUTOCOMMIT off
-
 -- automatically switch between extended and normal
 -- depending on how wide the output is
 \x auto
@@ -15,14 +12,18 @@
 -- a prompt wtih transaction information
 \set PROMPT1 '%[%033[33;1m%]%x%x%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
 
---nice timestamps
+-- nice timestamps
 set timezone to 'America/Los_Angeles';
 
---nulls are ghosts
+-- nulls are ghosts
 \pset null (null)
 
 -- always show how long a query takes
 \timing
+
+-- don't forget to be in a transaction
+-- this should be last so you don't open a txn until the first statement
+\set AUTOCOMMIT off
 
 \unset QUIET
 
