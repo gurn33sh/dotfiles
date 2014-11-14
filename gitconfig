@@ -50,3 +50,5 @@
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [vain]
 	default = cafe
+[credential]
+	helper = osxkeychain
