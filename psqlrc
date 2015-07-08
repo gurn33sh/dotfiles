@@ -23,7 +23,7 @@ set timezone to 'America/Los_Angeles';
 
 -- don't forget to be in a transaction
 -- this should be last so you don't open a txn until the first statement
-\set AUTOCOMMIT off
+--\set AUTOCOMMIT off
 
 \unset QUIET
 

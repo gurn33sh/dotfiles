@@ -37,3 +37,15 @@ export HEROKU_USE_SPECIAL_SUDO_TOKEN=1
 
 if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
 eval "$(rbenv init - --no-rehash)"
+
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z

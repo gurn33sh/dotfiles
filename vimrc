@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'rhysd/vim-crystal'
 Plugin 'fatih/vim-go'
 
 Plugin 'kien/ctrlp.vim'
@@ -15,6 +16,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'rking/ag.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'christoomey/vim-tmux-navigator'
 
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'exu/pgsql.vim'
@@ -94,9 +97,9 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " Use a common directory for backups and swp files
 " Create it if it doesn't exist
-silent execute '!mkdir -p ~/.vim_backups'
-set backupdir=~/.vim_backups//
-set directory=~/.vim_backups//
+silent execute '!mkdir -p /tmp/.vim_backups'
+set backupdir=/tmp/.vim_backups//
+set directory=/tmp/.vim_backups//
 
 " all sql is psql
 let g:sql_type_default = 'pgsql'
@@ -112,4 +115,14 @@ omap t <Plug>(easymotion-bd-tl)
 let g:EasyMotion_use_upper = 1 " Use uppercase target labels and type as a lower case
 let g:EasyMotion_smartcase = 1 " type `l` and match `l`&`L`
 let g:EasyMotion_use_smartsign_us = 1 " Smartsign (type `3` and match `3`&`#`)
+
+
+if has('nvim')
+  set clipboard+=unnamed,unnamedplus
+
+  "terminal
+  :tnoremap <Esc> <C-\><C-n>
+  "rerun last command
+  :nnoremap ! i!!<CR><CR><C-\><C-n>
+endif
 
