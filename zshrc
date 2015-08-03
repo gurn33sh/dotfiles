@@ -23,15 +23,25 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# vim
+alias vim=nvim
+
+# crystal
+export CRYSTAL_CACHE_DIR=/tmp/.crystal
+
+# go
 export GOPATH=/Users/will/code/goprojects
 export GOMAXPROCS=4
-
 export PATH=~/.bin:$GOPATH/bin:/usr/local/bin:/opt/local/bin:/usr/local/sbin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 
+# clojure
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+
+# postgres
 export PGDATA=/usr/local/var/postgres
 export PSQL_EDITOR="vim -c ':set ft=sql'"
+
+# heroku
 export HEROKU_USE_SPECIAL_SUDO_TOKEN=1
 
 

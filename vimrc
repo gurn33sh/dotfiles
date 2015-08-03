@@ -1,4 +1,6 @@
-set nocompatible
+if !has('nvim')
+  set nocompatible
+endif
 
 "start vundle stuff
 filetype off
@@ -30,11 +32,9 @@ filetype plugin indent on
 "end vundle stuff
 
 set showcmd
-set ttyfast
 
 " map tab to autocomplete
 imap <Tab> <C-P>
-set complete=.,w,b,t
 " omnicomplete with C-space
 imap <c-space> <c-x><c-o>
 " line complete with C-M-space
@@ -42,7 +42,6 @@ imap <c-S-space> <c-x><c-l>
 
 
 " indent
-set autoindent
 set smartindent
 set expandtab
 set tabstop=2
@@ -63,11 +62,6 @@ colorscheme solarized
 " search
 set showmatch
 set ignorecase
-set incsearch
-
-" misc
-set autoread
-set mouse=a
 
 " screen
 set ruler
@@ -75,7 +69,6 @@ set virtualedit=all
 set cursorline
 set number
 
-set backspace=indent,eol,start
 
 imap jj <Esc>
 imap jk <Esc>
@@ -92,7 +85,6 @@ set foldlevel=1
 " kill whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-set wildmenu
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " Use a common directory for backups and swp files
@@ -121,8 +113,17 @@ if has('nvim')
   set clipboard+=unnamed,unnamedplus
 
   "terminal
-  :tnoremap <Esc> <C-\><C-n>
-  "rerun last command
-  :nnoremap ! i!!<CR><CR><C-\><C-n>
+    :tnoremap <Esc> <C-\><C-n>
+    "rerun last command
+    :nnoremap ! i!!<CR><CR><C-\><C-n>G
+
+else "these are set by nvim by default
+  set complete=.,w,b,t
+  set autoindent
+  set incsearch
+  set autoread
+  set mouse=a
+  set backspace=indent,eol,start
+  set wildmenu
 endif
 
