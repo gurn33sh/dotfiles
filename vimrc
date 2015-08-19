@@ -11,7 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'rhysd/vim-crystal'
 Plugin 'fatih/vim-go'
 
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
