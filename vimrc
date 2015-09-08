@@ -25,6 +25,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'exu/pgsql.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'Lokaltog/vim-easymotion'
 call vundle#end()
 
