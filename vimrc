@@ -100,6 +100,8 @@ let g:sql_type_default = 'pgsql'
 " golang
 let g:go_fmt_command = "gofmt"
 
+" crystal
+let g:crystal_auto_format = 1
 
 " easymotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
