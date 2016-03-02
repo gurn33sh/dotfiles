@@ -111,6 +111,9 @@ let g:EasyMotion_use_upper = 1 " Use uppercase target labels and type as a lower
 let g:EasyMotion_smartcase = 1 " type `l` and match `l`&`L`
 let g:EasyMotion_use_smartsign_us = 1 " Smartsign (type `3` and match `3`&`#`)
 
+" syntastic
+let g:syntastic_eruby_ruby_quiet_messages =
+    \ {'regex': 'possibly useless use of a variable in void context'}
 
 if has('nvim')
   set clipboard+=unnamed,unnamedplus

@@ -44,6 +44,8 @@ export PSQL_EDITOR="vim -c ':set ft=sql'"
 # heroku
 export HEROKU_USE_SPECIAL_SUDO_TOKEN=1
 
+# rails
+export DISABLE_SPRING="true"
 
 if [[ -s $HOME/.localrc ]] ; then source $HOME/.localrc ; fi
 eval "$(rbenv init - --no-rehash)"
