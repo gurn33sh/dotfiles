@@ -1,0 +1,633 @@
+#compdef heroku
+# generated from Heroku v2.4.0
+# with these plugins: heroku-v3, old_plugins
+
+_heroku() {
+
+local -a app_argument
+app_argument=('(-a --app)'{-a,--app}'[application name]:')
+
+_heroku_commands() {
+  local -a commands
+  commands=(
+      "account\:confirm_billing:Confirm that your account can be billed at the end of the month"
+      "addons:list installed addons"
+      "addons\:list:list all available addons"
+      "addons\:add:install an addon"
+      "addons\:upgrade:upgrade an existing addon"
+      "addons\:downgrade:downgrade an existing addon"
+      "addons\:remove:uninstall an addon"
+      "addons\:open:open an addon's dashboard in your browser"
+      "apps:list your apps"
+      "apps\:info:show detailed app information"
+      "apps\:create:create a new app"
+      "apps\:rename:rename the app"
+      "apps\:open:open the app in a web browser"
+      "apps\:destroy:permanently destroy an app"
+      "auth\:login:log in with your heroku credentials"
+      "auth\:logout:clear local authentication credentials"
+      "config:display the config vars for an app"
+      "config\:add:add one or more config vars"
+      "config\:remove:remove a config var"
+      "db\:push:push local data up to your app"
+      "db\:pull:pull heroku data down into your local database"
+      "domains:list custom domains for an app"
+      "domains\:add:add a custom domain to an app"
+      "domains\:remove:remove a custom domain from an app"
+      "domains\:clear:remove all custom domains from an app"
+      "help:list available commands or display help for a specific command"
+      "keys:display keys for the current user"
+      "keys\:add:add a key for the current user"
+      "keys\:remove:remove a key from the current user"
+      "keys\:clear:remove all authentication keys from the current user"
+      "logs:display recent log output"
+      "logs\:cron:DEPRECATED: display cron logs from legacy logging"
+      "logs\:drains:manage syslog drains"
+      "maintenance\:on:enable maintenance mode"
+      "maintenance\:off:disable maintenance mode"
+      "pg\:info:display database information"
+      "pg\:ingress:allow direct connections to the database from this IP for one minute"
+      "pg\:promote:sets DATABASE as your DATABASE_URL"
+      "pg\:psql:open a psql shell to the database"
+      "pg\:reset:delete all data in DATABASE"
+      "pg\:unfollow:stop a replica from following and make it a read/write database"
+      "pg\:wait:monitor database creation, exit when complete"
+      "pgbackups:list captured backups"
+      "pgbackups\:url:get a temporary URL for a backup"
+      "pgbackups\:capture:capture a backup from a database id"
+      "pgbackups\:restore:restore a backup to a database"
+      "pgbackups\:destroy:destroys a backup"
+      "plugins:list installed plugins"
+      "plugins\:install:install a plugin"
+      "plugins\:uninstall:uninstall a plugin"
+      "ps\:dynos:scale to QTY web processes"
+      "ps\:workers:scale to QTY background processes"
+      "ps:list processes for an app"
+      "ps\:restart:restart an app process"
+      "ps\:scale:scale processes by the given amount"
+      "releases:list releases"
+      "releases\:info:view detailed information for a release"
+      "rollback:roll back to an older release"
+      "run:run an attached process"
+      "run\:rake:remotely execute a rake command"
+      "run\:console:open a remote console session"
+      "sharing:list collaborators on an app"
+      "sharing\:add:add a collaborator to an app"
+      "sharing\:remove:remove a collaborator from an app"
+      "sharing\:transfer:transfer an app to a new owner"
+      "ssl:list certificates for an app"
+      "ssl\:add:add an ssl certificate to an app"
+      "ssl\:remove:remove an ssl certificate from an app"
+      "ssl\:clear:remove all ssl certificates from an app"
+      "stack:show the list of available stacks"
+      "stack\:migrate:prepare migration of this app to a new stack"
+      "version:show heroku client version"
+      "apps\:transfer:move an app to another team"
+      "config\:lock:lock one or more config vars"
+      "config\:unlock:unlock one or more config vars"
+      "maintenance:show maintenance mode status"
+      "members:list members of a team"
+      "members\:add:add members to a team"
+      "members\:edit:change membership properties"
+      "members\:remove:remove members from a team"
+      "teams:list teams"
+      "teams\:info:display information about a team"
+      "teams\:edit:update a team"
+      "production:show production mode status"
+      "production\:on:enable production mode"
+      "production\:off:disable production mode"
+    )
+  _describe -t commands 'heroku command' commands
+}
+
+_heroku-account:confirm_billing() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-addons() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-addons:list() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-addons:add() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-addons:upgrade() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-addons:downgrade() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-addons:remove() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-addons:open() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-apps() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-apps:info() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-apps:create() {
+  _arguments \
+    '(-a --addons)'{-a,--addons}"[a list of addons to install]:" \
+    '(-t --team)'{-t,--team}"[the team]:" \
+    '(-r --remote)'{-r,--remote}"[the git remote to create, default \"heroku\"]:" \
+    '(-s --stack)'{-s,--stack}"[the stack on which to create the app]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-apps:rename() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-apps:open() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-apps:destroy() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-auth:login() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-auth:logout() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-config() {
+  _arguments \
+    '(-s --shell)'{-s,--shell}"[output config vars in shell format]" \
+      $app_argument && ret=0
+}
+
+_heroku-config:add() {
+  _arguments \
+    '(-l --lock)'{-l,--lock}"[lock the config vars after adding them]" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-config:remove() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-db:push() {
+  _arguments \
+    '(-c --chunksize)'{-c,--chunksize}"[specify the number of rows to send in each batch]:" \
+    '(-d --debug)'{-d,--debug}"[enable debugging output]" \
+    '(-e --exclude)'{-e,--exclude}"[exclude the specified tables from the push]:" \
+    '(-f --filter)'{-f,--filter}"[only push certain tables]:" \
+    '(-r --resume)'{-r,--resume}"[resume transfer described by a .dat file]:" \
+    '(-t --tables)'{-t,--tables}"[only push the specified tables]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-db:pull() {
+  _arguments \
+    '(-c --chunksize)'{-c,--chunksize}"[specify the number of rows to send in each batch]:" \
+    '(-d --debug)'{-d,--debug}"[enable debugging output]" \
+    '(-e --exclude)'{-e,--exclude}"[exclude the specified tables from the pull]:" \
+    '(-f --filter)'{-f,--filter}"[only pull certain tables]:" \
+    '(-r --resume)'{-r,--resume}"[resume transfer described by a .dat file]:" \
+    '(-t --tables)'{-t,--tables}"[only pull the specified tables]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-domains() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-domains:add() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-domains:remove() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-domains:clear() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-help() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-keys() {
+  _arguments \
+    '(-l --long)'{-l,--long}"[display extended information for each key]" \
+      $app_argument && ret=0
+}
+
+_heroku-keys:add() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-keys:remove() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-keys:clear() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-logs() {
+  _arguments \
+    '(-n --num)'{-n,--num}"[the number of lines to display]:" \
+    '(-p --ps)'{-p,--ps}"[only display logs from the given process]:" \
+    '(-s --source)'{-s,--source}"[only display logs from the given source]:" \
+    '(-t --tail)'{-t,--tail}"[continually stream logs]" \
+      $app_argument && ret=0
+}
+
+_heroku-logs:cron() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-logs:drains() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-maintenance:on() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-maintenance:off() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-pg:info() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pg:ingress() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pg:promote() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pg:psql() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pg:reset() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pg:unfollow() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pg:wait() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pgbackups() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-pgbackups:url() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pgbackups:capture() {
+  _arguments \
+    '(-e --expire)'{-e,--expire}"[if no slots are available to capture, delete the oldest backup to make room]" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pgbackups:restore() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-pgbackups:destroy() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-plugins() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-plugins:install() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-plugins:uninstall() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-ps:dynos() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-ps:workers() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-ps() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-ps:restart() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-ps:scale() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-releases() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-releases:info() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-rollback() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-run() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-run:rake() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-run:console() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-sharing() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-sharing:add() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-sharing:remove() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-sharing:transfer() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-ssl() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-ssl:add() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-ssl:remove() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-ssl:clear() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-stack() {
+  _arguments \
+    '(-a --all)'{-a,--all}"[include deprecated stacks]" \
+      $app_argument && ret=0
+}
+
+_heroku-stack:migrate() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-version() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-apps:transfer() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-config:lock() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-config:unlock() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-maintenance() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-members() {
+  _arguments \
+    '(-t --team)'{-t,--team}"[the team to which to add the member]:" \
+      $app_argument && ret=0
+}
+
+_heroku-members:add() {
+  _arguments \
+    '(-r --role)'{-r,--role}"[the role to assign to the new members]:" \
+    '(-t --team)'{-t,--team}"[the team to which to add the member]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-members:edit() {
+  _arguments \
+    '(-r --role)'{-r,--role}"[the role to assign to each user]:" \
+    '(-t --team)'{-t,--team}"[the team to which to add the member]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-members:remove() {
+  _arguments \
+    '(-t --team)'{-t,--team}"[the team to which to add the member]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-teams() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-teams:info() {
+  _arguments \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-teams:edit() {
+  _arguments \
+    '(-p --plan)'{-p,--plan}"[change the plan]:" \
+    '(-n --name)'{-n,--name}"[rename the team]:" \
+      ':cmdarg:( )' \
+    $app_argument && ret=0
+}
+
+_heroku-production() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-production:on() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+_heroku-production:off() {
+  _arguments \
+      $app_argument && ret=0
+}
+
+local curcontext=$curcontext ret=1
+local context state line
+declare -A opt_args
+_arguments -C   '*::arg:->cmd' && return
+case $state in
+  (cmd)
+    if (( $CURRENT == 1 )); then
+      _heroku_commands
+    else
+      curcontext="${curcontext%:*:*}:heroku-$words[1]:"
+      _call_function ret _heroku-$words[1]
+    fi
+    ;;
+esac
+}
+_heroku

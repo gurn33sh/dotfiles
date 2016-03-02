@@ -3,6 +3,3 @@
 #
 # brainstormr=/Users/robbyrussell/Projects/development/planetargon/brainstormr
 #
-zstyle ':completion:*:messages' format '%d'
-
-

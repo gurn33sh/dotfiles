@@ -1,0 +1,50 @@
+#compdef crystal
+
+#  '*:JS Script:_files -g "*.js"' && ret=0
+
+local curcontext="$curcontext" state line  ret=1
+
+local -a _1st_arguments
+_1st_arguments=(
+    "init:generate new crystal project"
+    "build:compile program file"
+    "browser:open an http server to browse program file"
+    "deps:install project dependencies"
+    "docs:generate documentation"
+    "eval:eval code"
+    "hierarchy:show type hierarchy"
+    "run:compile and run program file"
+    "spec:compile and run specs (in spec directory)"
+    "types:show type of main variables"
+)
+
+_arguments -C \
+  '1: :->cmds' \
+  '*: :->args' && ret=0
+
+case $state in
+  cmds)
+    _describe -t commands 'crystal command' _1st_arguments && ret=0
+    ;;
+
+  args)
+    case $words[2] in
+      (use|run|ls|list|install|uninstall|copy-packages)
+
+        _values 'version' $(__nvm_versions) && ret=0
+        ;;
+
+      (alias|unalias)
+
+        _values 'aliases' $(__nvm_aliases) && ret=0
+        ;;
+
+      *)
+        (( ret )) && _message 'no more arguments'
+        ;;
+
+    esac
+    ;;
+esac
+
+return ret
