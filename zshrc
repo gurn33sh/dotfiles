@@ -18,7 +18,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(heroku hk autojump git danger brew gem rvm c zsh-syntax-highlighting)
+plugins=(heroku autojump git danger brew gem rvm c zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 source $ZSH/oh-my-zsh.sh
@@ -39,7 +39,7 @@ export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-cont
 
 # postgres
 export PGDATA=/usr/local/var/postgres
-export PSQL_EDITOR="vim -c ':set ft=sql'"
+export PSQL_EDITOR="nvim -c ':set ft=sql'"
 
 # heroku
 export HEROKU_USE_SPECIAL_SUDO_TOKEN=1
@@ -61,3 +61,8 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+
+zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
+
+# add postgres to url escaping, not sure if there is a way to just add postgres
+zstyle ':urlglobber' url-other-schema http https ftp postgres

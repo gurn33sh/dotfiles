@@ -3,7 +3,7 @@
 	email = will@bitfission.com
 [core]
 	excludesfile = /Users/will/.gitignore
-	editor = vim
+	editor = nvim
 [color]
 	diff = auto
 	status = auto

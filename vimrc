@@ -10,6 +10,9 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'rhysd/vim-crystal'
 Plugin 'fatih/vim-go'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'mxw/vim-jsx'
+Plugin 'exu/pgsql.vim'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
@@ -19,14 +22,12 @@ Plugin 'rking/ag.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'christoomey/vim-tmux-navigator'
-
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'exu/pgsql.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Lokaltog/vim-easymotion'
+
+Plugin 'kassio/neoterm'
 call vundle#end()
 
 filetype plugin indent on
@@ -115,6 +116,9 @@ let g:EasyMotion_use_smartsign_us = 1 " Smartsign (type `3` and match `3`&`#`)
 let g:syntastic_eruby_ruby_quiet_messages =
     \ {'regex': 'possibly useless use of a variable in void context'}
 
+" ctrlp
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 if has('nvim')
   set clipboard+=unnamed,unnamedplus
 
@@ -122,6 +126,19 @@ if has('nvim')
     :tnoremap <Esc> <C-\><C-n>
     "rerun last command
     :nnoremap ! i!!<CR><CR><C-\><C-n>G
+
+    let g:neoterm_automap_keys = ',tt'
+    " run set test lib
+    nnoremap <silent> ,rt :call neoterm#test#run('all')<cr>
+    nnoremap <silent> ,rf :call neoterm#test#run('file')<cr>
+    nnoremap <silent> ,rn :call neoterm#test#run('current')<cr>
+    nnoremap <silent> ,rr :call neoterm#test#rerun()<cr>
+    " hide/close terminal
+    nnoremap <silent> ,th :call neoterm#close()<cr>
+    " clear terminal
+    nnoremap <silent> ,tl :call neoterm#clear()<cr>
+    " kills the current job (send a <c-c>)
+    nnoremap <silent> ,tc :call neoterm#kill()<cr>
 
 else "these are set by nvim by default
   set complete=.,w,b,t
@@ -132,4 +149,5 @@ else "these are set by nvim by default
   set backspace=indent,eol,start
   set wildmenu
 endif
+
 
