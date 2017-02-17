@@ -1,0 +1,134 @@
+---
+0.3.0 |checksum:KJ7GT5Lhq8xOV61Zr85G0NqrqkOxqBU3rUTx/vnFOis=
+0.3.0-x86-mingw32 |checksum:KJ7GT5Lhq8xOV61Zr85G0NqrqkOxqBU3rUTx/vnFOis=
+0.0.1 hoe:>= 1.7.0|checksum:RHhy0CzktxqCg4Nqbpe1k5E1dZ9LtevH+UEUbCno/BE=
+0.2.0 hoe:>= 1.7.0|checksum:wyuiUsNNxveVsSxPTkz7v3nI0omWqZ+LYqpmpnVqx0E=
+0.2.1 hoe:>= 1.8.0|checksum:dbQ+1KhG3TINa8vANC9frMJ3nUCTqfz4JCoJzs7vud0=
+0.2.2-mswin32 |checksum:Yze+6RBwgH085yP45DBYSlEvD2XobMpvAA+StQT1r+Y=
+0.2.2 hoe:>= 1.8.0|checksum:Yze+6RBwgH085yP45DBYSlEvD2XobMpvAA+StQT1r+Y=
+0.2.2-x86-mingw32 |checksum:Yze+6RBwgH085yP45DBYSlEvD2XobMpvAA+StQT1r+Y=
+0.3.1-mswin32 |checksum:fivTmzWAF+rGTFqedPAVQB7d3QrqNry+BlArn/9F3hg=
+0.3.1 |checksum:fivTmzWAF+rGTFqedPAVQB7d3QrqNry+BlArn/9F3hg=
+0.3.1-x86-mingw32 |checksum:fivTmzWAF+rGTFqedPAVQB7d3QrqNry+BlArn/9F3hg=
+0.3.2-mswin32 |checksum:x+ZqDXfb+lyFp0lu5y8SB6aIlsPg2D27t2cn8XB57F4=
+0.3.2 |checksum:x+ZqDXfb+lyFp0lu5y8SB6aIlsPg2D27t2cn8XB57F4=
+0.3.2-x86-mingw32 |checksum:x+ZqDXfb+lyFp0lu5y8SB6aIlsPg2D27t2cn8XB57F4=
+0.3.3-mswin32 |checksum:uVSUmvySCl1YbYWzFwEd9mdKPCNyQklci1IqWOmmqZw=
+0.3.3 |checksum:uVSUmvySCl1YbYWzFwEd9mdKPCNyQklci1IqWOmmqZw=
+0.3.3-x86-mingw32 |checksum:uVSUmvySCl1YbYWzFwEd9mdKPCNyQklci1IqWOmmqZw=
+0.3.4-mswin32 |checksum:fYRFSudfiveE2U3qHUqmW3j2kFd5c2kRCN3GHCY3YJw=
+0.3.4 |checksum:fYRFSudfiveE2U3qHUqmW3j2kFd5c2kRCN3GHCY3YJw=
+0.3.4-x86-mingw32 |checksum:fYRFSudfiveE2U3qHUqmW3j2kFd5c2kRCN3GHCY3YJw=
+0.3.5-mswin32 |checksum:R+hxrHUvFXKuHlH266R3M/QraG+9zFeZlDoX5MmMDnE=
+0.3.5 |checksum:R+hxrHUvFXKuHlH266R3M/QraG+9zFeZlDoX5MmMDnE=
+0.3.5-x86-mingw32 |checksum:R+hxrHUvFXKuHlH266R3M/QraG+9zFeZlDoX5MmMDnE=
+0.3.6-mswin32 |checksum:ZliJTZo+o1gn+MZjPyBxtvQe0vmt0mGNHc+J7rDZ1Xg=
+0.3.6 |checksum:ZliJTZo+o1gn+MZjPyBxtvQe0vmt0mGNHc+J7rDZ1Xg=
+0.3.6-x86-mingw32 |checksum:ZliJTZo+o1gn+MZjPyBxtvQe0vmt0mGNHc+J7rDZ1Xg=
+0.3.7-mswin32 |checksum:HeVvarNEU0rG8KDeuWt7LroEpms4uDx0gGqPEdeb/KI=
+0.3.7 |checksum:HeVvarNEU0rG8KDeuWt7LroEpms4uDx0gGqPEdeb/KI=
+0.3.7-x86-mingw32 |checksum:HeVvarNEU0rG8KDeuWt7LroEpms4uDx0gGqPEdeb/KI=
+0.3.8-mswin32 |checksum:pmFhp0pzMRKLBUhB6qtH2f3GEKDFhtKXQG2bc6Ok/ZA=
+0.3.8 |checksum:pmFhp0pzMRKLBUhB6qtH2f3GEKDFhtKXQG2bc6Ok/ZA=
+0.3.8-x86-mingw32 |checksum:pmFhp0pzMRKLBUhB6qtH2f3GEKDFhtKXQG2bc6Ok/ZA=
+0.3.9-mswin32 |checksum:YJozlCn+6CfcnzCK8eG1kQSZ03Yi+CQ/GhIh7DXNZgw=
+0.3.9 |checksum:YJozlCn+6CfcnzCK8eG1kQSZ03Yi+CQ/GhIh7DXNZgw=
+0.3.9-x86-mingw32 |checksum:YJozlCn+6CfcnzCK8eG1kQSZ03Yi+CQ/GhIh7DXNZgw=
+0.4.0-mswin32 |checksum:r9dlzKqBs0En0CBZGYLymN5F+2YTxpgU/msub5zhvgc=
+0.4.0 |checksum:r9dlzKqBs0En0CBZGYLymN5F+2YTxpgU/msub5zhvgc=
+0.4.0-x86-mingw32 |checksum:r9dlzKqBs0En0CBZGYLymN5F+2YTxpgU/msub5zhvgc=
+0.4.1-mswin32 |checksum:0gQQ7hs91+PiDA2uHDukzEJNMaqNgHgVBaIh1LpxcFU=
+0.4.1 |checksum:0gQQ7hs91+PiDA2uHDukzEJNMaqNgHgVBaIh1LpxcFU=
+0.4.1-x86-mingw32 |checksum:0gQQ7hs91+PiDA2uHDukzEJNMaqNgHgVBaIh1LpxcFU=
+0.4.2-mswin32 |checksum:3NenyHZM3D72AzerMf3Hdq81g8ZIWzbN0bE79P1F4RI=
+0.4.2 |checksum:3NenyHZM3D72AzerMf3Hdq81g8ZIWzbN0bE79P1F4RI=
+0.4.2-x86-mingw32 |checksum:3NenyHZM3D72AzerMf3Hdq81g8ZIWzbN0bE79P1F4RI=
+0.4.3-mswin32 |checksum:tQAtuEP4Apdqik94lKH/xvqs1eDj5XJJxo6TyuU1Jxs=
+0.4.3 |checksum:tQAtuEP4Apdqik94lKH/xvqs1eDj5XJJxo6TyuU1Jxs=
+0.4.3-x86-mingw32 |checksum:tQAtuEP4Apdqik94lKH/xvqs1eDj5XJJxo6TyuU1Jxs=
+0.4.4-mswin32 |checksum:az/RdITRgZXy38xeq6PElJwChjwHI2/LwPDAa+yVxac=
+0.4.4 |checksum:az/RdITRgZXy38xeq6PElJwChjwHI2/LwPDAa+yVxac=
+0.4.4-x86-mingw32 |checksum:az/RdITRgZXy38xeq6PElJwChjwHI2/LwPDAa+yVxac=
+0.4.5-mswin32 |checksum:5SbtcOHYXsMQTPspXJgJG9ErJQxaisFI1nnqbdLVt78=
+0.4.5 |checksum:5SbtcOHYXsMQTPspXJgJG9ErJQxaisFI1nnqbdLVt78=
+0.4.5-x86-mingw32 |checksum:5SbtcOHYXsMQTPspXJgJG9ErJQxaisFI1nnqbdLVt78=
+0.4.6-mswin32 |checksum:AQDL/1RC0B4GpgG/B9Mc7bDqA88u5k6dPRLPxDkYO0U=
+0.4.6 |checksum:AQDL/1RC0B4GpgG/B9Mc7bDqA88u5k6dPRLPxDkYO0U=
+0.4.6-x86-mingw32 |checksum:AQDL/1RC0B4GpgG/B9Mc7bDqA88u5k6dPRLPxDkYO0U=
+0.4.7-mswin32 |checksum:MknHqnlTGdchHtlX1LVvWie5oROx8pkvnbGmGJajq/g=
+0.4.7 |checksum:MknHqnlTGdchHtlX1LVvWie5oROx8pkvnbGmGJajq/g=
+0.4.7-x86-mingw32 |checksum:MknHqnlTGdchHtlX1LVvWie5oROx8pkvnbGmGJajq/g=
+0.5.0 |checksum:ztOxOq7UQtvaeqtmfIdlx3e47dwABVARxj8kAjbn9b4=
+0.5.0-x86-mingw32 |checksum:ztOxOq7UQtvaeqtmfIdlx3e47dwABVARxj8kAjbn9b4=
+0.5.1 |checksum:MlAptIyAzXmUWHk/NzW5nAZWjLnTVuC6esNrsPJwIBQ=
+0.5.1-x86-mingw32 |checksum:MlAptIyAzXmUWHk/NzW5nAZWjLnTVuC6esNrsPJwIBQ=
+0.5.2 |checksum:G3oNJ65WZq0yH8i3aZn+N2OaHxt61hk26Kw5XBiZLEY=
+0.5.2-x86-mingw32 |checksum:G3oNJ65WZq0yH8i3aZn+N2OaHxt61hk26Kw5XBiZLEY=
+0.5.3 |checksum:CPA4Jls0jJ+gOUk4g0IDp45OnmEui892w8kvgtk2i4w=
+0.5.3-x86-mingw32 |checksum:CPA4Jls0jJ+gOUk4g0IDp45OnmEui892w8kvgtk2i4w=
+0.5.4 |checksum:37lDMld3DxAnkxKvM7UI7WJb9Y+mYLVYN3Dfl+6zH9Q=
+0.5.4-x86-mingw32 |checksum:37lDMld3DxAnkxKvM7UI7WJb9Y+mYLVYN3Dfl+6zH9Q=
+0.5.5 |checksum:k38H+ePZ7GOTxM/WEoGWxDN02OKUDFHRPXHGJrHdHuw=
+0.5.5-x86-mingw32 |checksum:k38H+ePZ7GOTxM/WEoGWxDN02OKUDFHRPXHGJrHdHuw=
+0.5.6 |checksum:ewVT8CJwif28ERa6tKN6of8cUfsPgnmGdae618j3wU4=
+0.5.7 |checksum:mfIfmRh+skv+6Cg+fhYyjAR58ntk3FR1z7xnLLPfmC8=
+0.5.7-x86-mingw32 |checksum:mfIfmRh+skv+6Cg+fhYyjAR58ntk3FR1z7xnLLPfmC8=
+0.5.8 |checksum:Ij9/XUAN+8aY2pM+M59cmeGgo6EimpZey5xevU4aEps=
+0.5.8-x86-mingw32 |checksum:Ij9/XUAN+8aY2pM+M59cmeGgo6EimpZey5xevU4aEps=
+0.5.9 |checksum:ZwAfe5zvawje71wMM7yUWnGMkDOfsVkpqVFGiTXbAdo=,ruby:>= 0
+0.5.9-x86-mingw32 |checksum:ZwAfe5zvawje71wMM7yUWnGMkDOfsVkpqVFGiTXbAdo=,ruby:>= 0
+0.5.10-java |checksum:KKcNTETJObvFbL8sXkBKnxsAN3Mb++m+rhByuFbI3Ck=,ruby:>= 0
+0.5.10 |checksum:KKcNTETJObvFbL8sXkBKnxsAN3Mb++m+rhByuFbI3Ck=,ruby:>= 0
+0.5.10-x86-mingw32 |checksum:KKcNTETJObvFbL8sXkBKnxsAN3Mb++m+rhByuFbI3Ck=,ruby:>= 0
+0.5.11-java |checksum:RVHQ+c6VMmNXA+wex7+MbqkbSic5ub/LHuiAj+53Scs=,ruby:>= 0
+0.5.11 |checksum:RVHQ+c6VMmNXA+wex7+MbqkbSic5ub/LHuiAj+53Scs=,ruby:>= 0
+0.6.0pre1-java |checksum:9I6QY1V6+5WBSNIg04PWjn2RjDLN7atfZpLScHDm/p0=,ruby:>= 0,rubygems:> 1.3.1
+0.6.0pre1 |checksum:9I6QY1V6+5WBSNIg04PWjn2RjDLN7atfZpLScHDm/p0=,ruby:>= 0,rubygems:> 1.3.1
+0.6.0pre1-x64-mingw32 |checksum:9I6QY1V6+5WBSNIg04PWjn2RjDLN7atfZpLScHDm/p0=,ruby:>= 0,rubygems:> 1.3.1
+0.6.0pre1-x86-mingw32 |checksum:9I6QY1V6+5WBSNIg04PWjn2RjDLN7atfZpLScHDm/p0=,ruby:>= 0,rubygems:> 1.3.1
+0.5.12-java |checksum:EBRvTvU3QLWSvDL9Q1M+DSDQI8aEHun+EFvbFfLlbQ8=,ruby:>= 0
+0.5.12 |checksum:EBRvTvU3QLWSvDL9Q1M+DSDQI8aEHun+EFvbFfLlbQ8=,ruby:>= 0
+0.5.12-x86-mingw32 |checksum:EBRvTvU3QLWSvDL9Q1M+DSDQI8aEHun+EFvbFfLlbQ8=,ruby:>= 0
+0.6.0-java |checksum:O1tmSBMVobXIuo7wODtwF9E6VG+yz1PO0wCM/tFCX+w=,ruby:>= 0
+0.6.0 |checksum:O1tmSBMVobXIuo7wODtwF9E6VG+yz1PO0wCM/tFCX+w=,ruby:>= 0
+0.6.0-x64-mingw32 |checksum:O1tmSBMVobXIuo7wODtwF9E6VG+yz1PO0wCM/tFCX+w=,ruby:>= 0
+0.6.0-x86-mswin32-60 |checksum:O1tmSBMVobXIuo7wODtwF9E6VG+yz1PO0wCM/tFCX+w=,ruby:>= 0
+0.6.1-java |checksum:5bUehcwtw/kZZnHjYEirCKB0m/RATvSkUWyTXhMo2kQ=,ruby:>= 0
+0.6.1 |checksum:5bUehcwtw/kZZnHjYEirCKB0m/RATvSkUWyTXhMo2kQ=,ruby:>= 0
+0.6.1-x64-mingw32 |checksum:5bUehcwtw/kZZnHjYEirCKB0m/RATvSkUWyTXhMo2kQ=,ruby:>= 0
+0.6.1-x86-mswin32-60 |checksum:5bUehcwtw/kZZnHjYEirCKB0m/RATvSkUWyTXhMo2kQ=,ruby:>= 0
+0.6.2-java |checksum:
+0.6.2 |checksum:
+0.6.2-x64-mingw32 |checksum:
+0.6.2-x86-mingw32 |checksum:
+0.7.0dev1-java |checksum:
+0.7.0dev1 |checksum:
+0.7.0dev1-x64-mingw32 |checksum:
+0.7.0dev1-x86-mingw32 |checksum:
+0.7.0-java |checksum:
+0.7.0 |checksum:
+0.7.0-x64-mingw32 |checksum:
+0.7.0-x86-mingw32 |checksum:
+0.7.1-java |checksum:
+0.7.1 |checksum:
+0.7.1-x64-mingw32 |checksum:
+0.7.1-x86-mingw32 |checksum:
+0.7.2dev1-java |checksum:
+0.7.2 |checksum:45e7bef953701f156880f327278263dae52034ab6726dc33469162b2186386e1,ruby:>= 0,rubygems:>= 0
+0.7.2-java |checksum:45e7bef953701f156880f327278263dae52034ab6726dc33469162b2186386e1,ruby:>= 0,rubygems:>= 0
+0.7.3-java |checksum:ea208ec8c4b20607309d93c1d610a8a306078a683ea2845ec51dbab8eb10b016,ruby:>= 0,rubygems:>= 0
+0.7.3 |checksum:ea208ec8c4b20607309d93c1d610a8a306078a683ea2845ec51dbab8eb10b016,ruby:>= 0,rubygems:>= 0
+0.7.3-x86-mingw32 |checksum:dc1f4b5302c3d070aa09e792d45d6428b13bdfcf36f13869f80cc3b201d95494,ruby:>= 0,rubygems:>= 0
+0.7.3-x64-mingw32 |checksum:6f285047b7f92ff00413f5171ba3fe5a36623662577ba1354d0ae2747acbbaca,ruby:>= 0,rubygems:>= 0
+0.7.4 |checksum:c4fa8f8d727877b3dc9f90dfe0fff0b012df5d49e6498c5a33a4ec03f9e2be72,ruby:>= 0,rubygems:>= 0
+0.7.4-java |checksum:f04577e70605670b62192f81e70acb9e11d410732cee752f3c35b2c0eba42ccf,ruby:>= 0,rubygems:>= 0
+0.7.4-x64-mingw32 |checksum:043db25c89bc30a1a925979f2a100ac57c0d28c39e6c1798f85e83b68dfb5a93,ruby:>= 0,rubygems:>= 0
+0.7.4-x86-mingw32 |checksum:f04577e70605670b62192f81e70acb9e11d410732cee752f3c35b2c0eba42ccf,ruby:>= 0,rubygems:>= 0
+0.7.5 |checksum:ccb200af9a4fafad22af4c23617a7d41c955d8de6973ee597ef27fb0bf7d0721,ruby:>= 0,rubygems:>= 0
+0.7.5-java |checksum:4c04361ec3ab43a653fa5ca55c4f76ddea58981f5244412e6db83ffd346f0ddd,ruby:>= 0,rubygems:>= 0
+0.7.5-x86-mingw32 |checksum:8a3817a8762188f25f0fbe3a4784bb2fc0a4c4c9023a9ea8777e9563ffeb7359,ruby:>= 0,rubygems:>= 0
+0.7.5-x64-mingw32 |checksum:4c04361ec3ab43a653fa5ca55c4f76ddea58981f5244412e6db83ffd346f0ddd,ruby:>= 0,rubygems:>= 0
+0.7.6 |checksum:8537beb868cc6e742488c54928961cd79694fa0ef5d10772dd3e3eaf62ccc2ba,ruby:>= 0,rubygems:>= 0
+0.7.6-java |checksum:e1c604421410e9d7d70923ee9858f96c26c249be409bb4c224ae4cacb895c99b,ruby:>= 0,rubygems:>= 0
+0.7.6-x86-mingw32 |checksum:e1c604421410e9d7d70923ee9858f96c26c249be409bb4c224ae4cacb895c99b,ruby:>= 0,rubygems:>= 0
+0.7.6-x64-mingw32 |checksum:e1c604421410e9d7d70923ee9858f96c26c249be409bb4c224ae4cacb895c99b,ruby:>= 0,rubygems:>= 0

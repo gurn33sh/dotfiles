@@ -24,10 +24,14 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+"Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Lokaltog/vim-easymotion'
 
+Plugin 'vim-airline/vim-airline'
+
 Plugin 'kassio/neoterm'
+Plugin 'janko-m/vim-test'
 call vundle#end()
 
 filetype plugin indent on
@@ -129,10 +133,12 @@ if has('nvim')
 
     let g:neoterm_automap_keys = ',tt'
     " run set test lib
-    nnoremap <silent> ,rt :call neoterm#test#run('all')<cr>
-    nnoremap <silent> ,rf :call neoterm#test#run('file')<cr>
-    nnoremap <silent> ,rn :call neoterm#test#run('current')<cr>
-    nnoremap <silent> ,rr :call neoterm#test#rerun()<cr>
+    let test#strategy = "neoterm"
+    nnoremap <silent> ,rt :TestSuite<cr>
+    nnoremap <silent> ,rf :TestFile<cr>
+    nnoremap <silent> ,rn :TestNearest<cr>
+    nnoremap <silent> ,rr :TestLast<cr>
+    nnoremap <silent> ,rg :TestVisit<cr>
     " hide/close terminal
     nnoremap <silent> ,th :call neoterm#close()<cr>
     " clear terminal

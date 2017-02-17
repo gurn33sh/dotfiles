@@ -1,0 +1,22 @@
+---
+0.1.0 postmark:>= 0|checksum:f354c7d66e41d6b8b9d872da45c95deae232a79bbf974080d8a2e7eb4bece371
+0.1.1 postmark:>= 0|checksum:40483e3b782917d4a4210bb4662adac10a4f39771b739c3d73e70e206e03b1de
+0.1.2 postmark:>= 0|checksum:cbc770f33479d97791b58961de3ffe09a9970ed9aaf8d1eb7f29fa08e11ebf93
+0.1.3 postmark:>= 0|checksum:0202f18e7ee1f7f68461469191b42b20a93d93bc4e7ddf679ebd88d6c2aec3d6
+0.2.0 postmark:>= 0|checksum:1c4f08454bed3f938e6412d06905612c408025839031d80b05314e8dd9595054
+0.3.0 |checksum:627fcc6bb9ef10534f1d651671b9f4985dad03eb667b85ecbce63fea10a7619d
+0.4.0 |checksum:d2acf722c133997e66120eacbdf9d6a451f28832503bdba3c39325ef9b23993f
+0.4.1 actionmailer:>= 0,postmark:>= 0.9.0,rake:>= 0|checksum:7904829118cdd8118ef488fac735c7f5d66069d21ac26fb53840800d29ec7dc8
+0.4.2 actionmailer:>= 0,postmark:~> 0.9|checksum:b118dbc0aa4b79ca1e439f481067f18b0861b9006f0428ba915a544d8f2a8ae9
+0.5.1 actionmailer:>= 3.0.0,postmark:~> 1.0|checksum:feef6b17165426ab00159e6494481bed3d93e53a4aa0a0098db8ca2a5ee85fc4
+0.5.2 actionmailer:>= 3.0.0,postmark:~> 1.0|checksum:52964421b40c703ba76fcb18647a504b4a48e216f09801f14a145e41fd18bff2
+0.6.0 actionmailer:>= 3.0.0,postmark:~> 1.1.0|checksum:5907f318e8e76bb4ab74ddf1eb8d2b983d207508ba6c8c7d864f57a19b316d79
+0.7.0 actionmailer:>= 3.0.0,postmark:~> 1.2.0|checksum:39e524f96a04a791a4b95a9ccad726100ab0b1e2527c81e6893a72141cd46629
+0.8.0 actionmailer:>= 3.0.0,postmark:~> 1.3.0|checksum:39f6bb723ec5c468d818b3f4e87cbdb81eb14cc78b36c0b3d5b50bae0d324092
+0.9.0 actionmailer:>= 3.0.0,postmark:~> 1.4.0|checksum:0e0ef816b06c10f280554c1090796855785cd4fb9af67ea8d4d77633555931a8
+0.10.0 actionmailer:>= 3.0.0,postmark:~> 1.5.0|checksum:ec3890926c893d1486998a0ad5aab2233dea893574eafb8a6fab093c86503070
+0.11.0 actionmailer:>= 3.0.0,postmark:~> 1.6.0|checksum:971a85d055357ee26c456d3ed8bcec1bb95e5916cc6e122ec85b9d3f01e0b9b6
+0.12.0 actionmailer:>= 3.0.0,postmark:~> 1.7.0|checksum:8c316bfcdafa9cdab72d89a14f022d401a7fbc83d2a4cacf2a34cafaa9854762
+0.13.0 actionmailer:>= 3.0.0,postmark:~> 1.8.0|checksum:2bf76b8c5d3f180d8bc04886fc268de4751a4b1b9a58eb44d3c28d62dcd6025a
+0.14.0 actionmailer:>= 3.0.0,postmark:~> 1.9.0|checksum:ac72f8de1c658af19c531f8f8f236c17e26b732d2f7adcf362e617a5357ed05d
+0.15.0 actionmailer:>= 3.0.0,postmark:~> 1.10.0|checksum:3343d9ac6a22c98c12436e2d7c1208a27dac1ed51f5b068cd756033b1dbb5b28

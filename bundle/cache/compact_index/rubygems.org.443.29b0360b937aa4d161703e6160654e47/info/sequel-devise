@@ -1,0 +1,10 @@
+---
+0.0.1 |checksum:adf7c1567f154d55571f7b5e38c2bc858de8c461f1a22f7ab42a2d3eacb0f60b
+0.0.2 devise:>= 0,orm_adapter-sequel:>= 0|checksum:277bcf13703cd7e001f91ef6b61b40a9f9859e13a37a7626faa6f949e57feea9
+0.0.3 devise:>= 0,orm_adapter-sequel:>= 0|checksum:d447ef0e91a6b14052baa404d3e6465a3291c819732a72bbd71333cffa6ba360
+0.0.4 devise:>= 0,orm_adapter-sequel:>= 0|checksum:dc3e66a0382be4e04f27083332c6c4affd4939fbad344c48628def806b3bad67
+0.0.5 devise:>= 0,orm_adapter-sequel:>= 0|checksum:6bd059dad2bd9542b1c976f72ac8459bfd7269616b0e8db45f668b152c182b24
+0.0.6 devise:>= 0,orm_adapter-sequel:>= 0|checksum:3a59bc7d521283988939dddba74ea9b7bfd8acbb0adde61ecaf5d90f82bcad55
+0.0.7 devise:>= 0,orm_adapter-sequel:>= 0|checksum:e1c6e75d787ad5db9c9094a2db0ca67d806803dbb7cce6aeaefef1bab29ebe59
+0.0.8 devise:>= 0,orm_adapter-sequel:>= 0|checksum:bdad7da84bb1e348ad821d2712a4a1bcf968d0fc69a1a63af8b37353adc188b6
+0.0.9 devise:>= 0,orm_adapter-sequel:>= 0|checksum:4a96cb9008b9f94c1839d999826bcba9dd3830bbe95315ed2ad806944fa3043d

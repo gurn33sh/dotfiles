@@ -1,0 +1,6 @@
+---
+0.0.1 builder:>= 2.0.0,rack:>= 1.0.0|checksum:c4cdee2e3dfb11a067ff0c1045e387a7711c5be166b395c62696bde23572221a
+0.0.2 builder:>= 2.0.0,rack:>= 1.0.0|checksum:43052430e8aee41198fa7e66facbd5c2e1e10154f835feaf93be0c080f0f1095
+0.0.3 builder:>= 2.0.0,rack:>= 1.0.0|checksum:ab0bc339d52fe55ef8a7708efbdba9c092038a9101b9b967fe14f144d715c841
+0.1.0 builder:>= 2.0.0,rack:>= 1.0.0|checksum:ead63fe2a234d9d4d81858caf079416cf1adc296f02f950fbf61e8028b98de82
+0.1.1 builder:>= 2.0.0,rack:>= 1.0.0|checksum:e12ef71e023bdfe7c00df9af617a5fe6dcdb19afe5a1a35edd3bb94fdf2a5602

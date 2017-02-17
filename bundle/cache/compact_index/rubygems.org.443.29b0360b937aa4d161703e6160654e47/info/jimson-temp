@@ -1,0 +1,5 @@
+---
+0.9.2 blankslate:~> 3.1.2,multi_json:~> 1.7.6,rack:~> 1.4.5,rest-client:~> 1.6.7|checksum:44c859cc23c24ad00b4efc91f6e57199f2c855951033c20ee2a465b43108ea0a
+0.9.3 blankslate:~> 3.1.2,multi_json:~> 1.7.6,rack:~> 1.4.5,rest-client:~> 1.6.7|checksum:0745a153b14731d443b46d032210242b5f40f2cc63f2ce465c3427c6f1542978
+0.9.4 blankslate:>= 3.1.2,multi_json:>= 1.7.6,rack:>= 1.4.5,rest-client:>= 1.6.7|checksum:cf1cce8a896d1a2dd27ecb297a8dc47ae7ed23b825f14fc2b41e56a834ce2921
+0.9.5 blankslate:>= 3.1.2,multi_json:~> 1.0,rack:~> 1.4,rest-client:~> 1.0|checksum:7d0d00ec46450379a846ecda7077be96a80c77002d9485dd5f47508480be71f2

@@ -28,6 +28,7 @@ alias vim=nvim
 
 # crystal
 export CRYSTAL_CACHE_DIR=/tmp/.crystal
+alias bcrystal=/Users/will/code/crystal/bin/crystal
 
 # go
 export GOPATH=/Users/will/code/goprojects
@@ -66,3 +67,5 @@ zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
 
 # add postgres to url escaping, not sure if there is a way to just add postgres
 zstyle ':urlglobber' url-other-schema http https ftp postgres
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

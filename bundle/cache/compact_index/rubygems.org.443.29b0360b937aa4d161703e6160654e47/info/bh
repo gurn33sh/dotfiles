@@ -1,0 +1,20 @@
+---
+0.0.1 |checksum:sbx1077tQYTByCVeWLzFSMz7VxkoUJxWcavXyFjh3Ck=,ruby:>= 0
+0.0.2 actionpack:>= 0,activesupport:>= 0|checksum:bOpxq+Xc9OE2mKX0blPGySyBPoSPdrr0/XR4k5jdcDQ=,ruby:>= 1.9.3
+0.0.3 actionpack:>= 0,activesupport:>= 0|checksum:3yWLHeP4pSaaRi5W6Sl4tQmEhhzjzvsaIJTIClHeSkE=,ruby:>= 1.9.3
+0.0.4 actionpack:>= 0,activesupport:>= 0|checksum:0dD1HC3670XJCPmzETlL4QnCNLc8aiN5GzbOahBdZQ4=,ruby:>= 1.9.3
+0.0.5 actionpack:>= 0,activesupport:>= 0|checksum:4vGA/4syiFS83/R0B+UqkLtejPjqpGmwR4LN7UhhOXU=,ruby:>= 1.9.3
+0.0.6 actionpack:>= 0,activesupport:>= 0|checksum:cbV0xiDkdWig4no9qWkqwis0EjuE7Lz71DsCKdG4QEM=,ruby:>= 1.9.3
+0.0.7 actionpack:>= 0,activesupport:>= 0|checksum:spxyfVf+3vbrxC6L9HJ9gnatGbVtiaClzG+dsqMapHQ=,ruby:>= 1.9.3
+0.0.8 actionpack:>= 0,activesupport:>= 0|checksum:iJlJTzDCtn/Kur1Cynil1rVRp9gBhfd/vylsWZyE7pg=,ruby:>= 1.9.3
+1.0.0 actionpack:>= 0,activesupport:>= 0|checksum:QzkUgIMZno60V+84j0RjaQ2J018xL1573Z404vSwAug=,ruby:>= 1.9.3
+1.0.1 actionpack:>= 0,activesupport:>= 0|checksum:aJeVee+kTny4UlWhr4ZCuab/bdkQwtXw6wKIxwZz7OQ=,ruby:>= 1.9.3
+1.1.0 actionpack:>= 0,activesupport:>= 0|checksum:JBfXeSIU7DK6VA38QyuvUwzGVP6kE5Ad2DauuaOS70k=,ruby:>= 1.9.3
+1.1.1 actionpack:>= 0,activesupport:>= 0|checksum:P+GzmQvPrizyu9RL5N8kkzikIj0kvIruc0xFePuaneA=,ruby:>= 1.9.3
+1.2.0 actionpack:>= 0,activesupport:>= 0|checksum:1NGYQDZXqTuE2hQNsDMUptpTGh9+aWq2VM3XDWEOH4Q=,ruby:>= 1.9.3
+1.3.0 actionpack:>= 0,activesupport:>= 0|checksum:cLuFLrlD29YCg4671+QBffz8AtGYOfjKKB1lgMXlYb0=,ruby:>= 1.9.3
+1.3.1 actionpack:>= 0,activesupport:>= 0|checksum:pnBqYsdiB3skm/qpofbR37DTlFrE4eb+n+0kMN/sxUg=,ruby:>= 1.9.3
+1.3.3 actionpack:>= 0,activesupport:>= 0|checksum:u/HAflqLVLtQPIDjHvZdVJNoQKi2lNqLqJpMlYN4Y9g=,ruby:>= 1.9.3
+1.3.4 actionpack:>= 0,activesupport:>= 0|checksum:vi6AwM+dJMNM6Dd16T4k95C/CpfUgZmPb9zcAESeeC0=,ruby:>= 1.9.3
+1.3.5 actionpack:>= 0,activesupport:>= 0|checksum:
+1.3.6 actionpack:>= 0,activesupport:>= 0|checksum:39571b465dc2debb5cbc6390da5809fe4b6da9769c138808f2f88c87cf04584a,ruby:>= 1.9.3,rubygems:>= 0

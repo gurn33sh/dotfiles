@@ -1,0 +1,19 @@
+---
+0.1.0 parse-cron:>= 0.1.2,sidekiq:>= 2.13.1|checksum:d5690b836be5f33e81a8e3830e145e9eb157348ef874502c4b7135bc3593dc95
+0.1.2 parse-cron:>= 0.1.2,sidekiq:>= 2.13.1|checksum:ccf45fc4e1baaef0b968d3ac09de6813e895f4506c0628acb3fe817af11a93f4
+0.1.3 parse-cron:>= 0.1.2,sidekiq:>= 2.13.1|checksum:ba27a7d315b508fbdaeb64ed68d8759a365cb1861743daa795753b43a00cb54a
+0.1.4 parse-cron:>= 0.1.2,sidekiq:>= 2.13.1|checksum:06b55faaf1777a2260974fb76ebf19dd5861d481f962e4d40a0f5f185e3a51f6
+0.1.5 parse-cron:>= 0.1.2,sidekiq:>= 2.13.1|checksum:d2e011fbfd94d246229159467cba297d73ca3453dba2fa596525f3df3ed4b9c4
+0.1.6 rufus-scheduler:>= 2.0.24,sidekiq:>= 2.13.1|checksum:211556fb25d0746ae927b7aa7449d9d576a51754956f355ccc907b57dc7bf9eb
+0.1.7 rufus-scheduler:>= 2.0.24,sidekiq:>= 2.16.0|checksum:b59b8c7500ae104b061ba44bf6f3819aad333a2260aa7c0d72f7a78f4accc5df
+0.1.8 rufus-scheduler:>= 2.0.24,sidekiq:>= 2.16.0|checksum:90fce4afc8a338ae1ba298da6f3170fcb36340c5003a62b4815d68b2d7950462
+0.1.9 rufus-scheduler:>= 2.0.24,sidekiq:>= 2.17.3|checksum:c9b30d8e2f24fbc4cf849ede0d2a3427cfc4f9d24ded7a197ccfa4404eed5a65
+0.2.0 rufus-scheduler:>= 2.0.24,sidekiq:>= 2.17.3,tilt:< 2.0.0|checksum:ae88d9bc305c29aa63bbd24f3b3a91a39e4c5e4c8605699734b57c90f663c22b
+0.3.0 rufus-scheduler:>= 2.0.24,sidekiq:>= 2.17.3,tilt:< 2.0.0|checksum:d846c5a86c487179d3ae54c6a43532629c131c64ac989748fff0e5d5cbb823e4
+0.3.1 rufus-scheduler:>= 2.0.24,sidekiq:>= 2.17.3|checksum:e2ee3884cdaf0b67a5d44b79865bd12c49b488d4d2562cbdb102f216951a8fd6
+0.4.0 redis-namespace:>= 1.5.2,rufus-scheduler:>= 2.0.24,sidekiq:>= 4.0.0|checksum:1e4f3fe43c107192d6c1f62a6f37bf4f23bbcebdccf1a83729c96c3911dccb76
+0.4.1 redis-namespace:>= 1.5.2,rufus-scheduler:>= 2.0.24,sidekiq:>= 4.0.0|checksum:c50cbba2678760d389fa92869ba54fff5c6b56fe6e557e652043e9ac577ac098
+0.4.2 redis-namespace:>= 1.5.2,rufus-scheduler:>= 2.0.24,sidekiq:>= 4.0.0|checksum:25a1f819d1f033bd0fc1d6eddad616fa195d65124b611cfdb3f253b2e52574a5
+0.4.3 redis-namespace:>= 1.5.2,rufus-scheduler:>= 2.0.24,sidekiq:>= 4.0.0|checksum:50f50673667931a50d5bd8b277dc1450d95709370c3d828cb90f5f7f272e1326
+0.4.4 redis-namespace:>= 1.5.2,rufus-scheduler:>= 2.0.24,sidekiq:>= 4.2.1|checksum:aacdff12e1f4486abe34bdae835a476d6c75b812b6c3dbd87d1440e7214051af
+0.4.5 redis-namespace:>= 1.5.2,rufus-scheduler:>= 2.0.24,sidekiq:>= 4.2.1|checksum:ee4c63821c6834dbdd884c07f1467a20116dc82449ce8491ff3236b14bd30bcb

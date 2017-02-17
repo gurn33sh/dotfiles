@@ -1,0 +1,5 @@
+---
+0.0.1 activemodel:>= 3.0.0,orm_adapter:>= 0,sequel:>= 3.18.0|checksum:c0333c09bf1d7ca68bf017967059f79a3d3c237be03608fbc387c63764eec018,rubygems:>= 1.3.6
+0.0.2 activemodel:>= 3.0.0,orm_adapter:>= 0,sequel:>= 3.18.0|checksum:26159a5ae63f8f72247220783063487c109f4233b32c7c9ca6b4f3a2efae7714,rubygems:>= 1.3.6
+0.0.3 activemodel:>= 3.0.0,orm_adapter:>= 0,sequel:>= 3.18.0|checksum:00ee38f0a89461e9ec3d1575d94caf8931ab76dad9107b408253cab7abaa6972,rubygems:>= 1.3.6
+0.1.0 activemodel:>= 3.0.0,orm_adapter:>= 0.4.0,sequel:>= 3.18.0|checksum:2d3ecabb197a1116b3b271011be4046a33d031329fe8fe0e9d8cb493b53bc6c1,rubygems:>= 1.3.6
